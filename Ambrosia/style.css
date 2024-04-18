@@ -304,11 +304,15 @@ a:active {
 
 @media (max-width: 768px) {
   #profile-text {
-    font-size: 50px; /* Smaller font size for small devices */
+    font-size: 30px; /* Smaller font size for small devices */
   }
   .container2{
     margin-left:20px;
     margin-right:20px;
+  }
+
+  .transformskin{
+    font-size: 20px;
   }
 }
 

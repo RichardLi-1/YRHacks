@@ -14,7 +14,7 @@
     <div id="headfiller" style="height: 38px; background-color: #e6dad1"></div>
     <div id="head" style="margin-top: 38px">
       <div class="header-left">
-        <h1 id="navbar-title"><a href="index.html">Ambrosia</a></h1>
+        <h1 id="navbar-title"><a href="index.html">ambrosia</a></h1>
       </div>
       <nav>
         <a class="buttons" href="skintype.html">Discover Your Skin Type</a>
@@ -70,19 +70,19 @@
     >
       <div class="profile-info" style="margin-right: 100px; flex: 1">
         <h2
-          class="common-font profile-text"
+          class="common-font profile-text transformskin"
           style="margin-bottom: 0; font-weight: 500"
         >
           Transform
         </h2>
         <h2
-          class="common-font profile-text"
+          class="common-font profile-text transformskin"
           style="margin-bottom: 0; margin-top: 0; font-weight: 500"
         >
           your skin with
         </h2>
         <h2
-          class="common-font profile-text"
+          class="common-font profile-text transformskin"
           style="margin-top: 0; margin-bottom: 25px; font-weight: 900"
         >
           Custom Care
@@ -213,17 +213,27 @@
     </div>
 
     <script>
+      var styles = `
+  #assessment.value{
+    word-wrap: break-word;
+    }
+`;
+
+      var styleSheet = document.createElement("style");
+      styleSheet.innerText = styles;
+      document.head.appendChild(styleSheet);
       function clearInputField() {
         document.getElementById("name").value = ""; // This sets the value of the input field to an empty string, effectively clearing it.
         var assessment = document.getElementById("assessment");
       }
-      var img = document.createElement("cerave");
-      cerave.src = "cerave.png";
 
       function check() {
         var assessment = document.getElementById("assessment");
         if (document.getElementById("name").value.toLowerCase() === "cerave") {
-          document.body.appendChild(cerave);
+          document.getElementById("assessment").value =
+            "CERAVE consistently stands out for its commitment to dermatologist-recommended formulas that cater to various skin types. CeraVe products are widely acclaimed for their unique ability to help restore and maintain the skin’s natural barrier, thanks to the inclusion of essential ceramides and hyaluronic acid. Their products are not only effective but also gentle, making them suitable for even sensitive skin. Customers often praise CeraVe for its affordability and accessibility, making high-quality skincare achievable for everyone.";
+          document.getElementById("name").value = ""; // Clears the input field
+          document.getElementById("name").value = ""; // This sets the value of the input field to an empty string, effectively clearing it.
         }
       }
     </script>
@@ -239,7 +249,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="social-icon" src="linkedin.jpeg" alt="LinkedIn" />
+          <img class="social-icon" src="linkedin.jpeg" alt="LinkedIn"">
         </a>
         <a
           href="https://www.instagram.com/glimmerssofhope/"
