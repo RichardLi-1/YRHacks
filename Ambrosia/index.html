@@ -82,6 +82,7 @@
                 </div>
 
                 <p style="color:white; font-family: TT Hoves Thin; font-size: 25px;">Assessment</p>
+                <input disabled = "disabled" style="min-height:70px; background-color: #eee; border-style:none; height:200px;" type="text" id="assessment" name="name" required minlength="200" maxlength="400" size="60" />
                 <p style="color:white; opacity:0;" id="assessment"> 
                     CERAVE consistently stands out for its commitment to dermatologist-recommended formulas that cater to various skin types. CeraVe products are widely acclaimed for their unique ability to help restore and maintain the skin’s natural barrier, thanks to the inclusion of essential ceramides and hyaluronic acid. Their products are not only effective but also gentle, making them suitable for even sensitive skin. Customers often praise CeraVe for its affordability and accessibility, making high-quality skincare achievable for everyone.
                 </p>
@@ -98,13 +99,12 @@
         function clearInputField() {
             document.getElementById('name').value = '';  // This sets the value of the input field to an empty string, effectively clearing it.
             var assessment = document.getElementById('assessment');
-            assessment.style.opacity = '0';
         }
 
         function check() {
         var assessment = document.getElementById('assessment');
         if (document.getElementById('name').value.toLowerCase() === "cerave") {
-            assessment.style.opacity = '1';
+            document.getElementById('assessment').value = "CERAVE consistently stands out for its commitment to dermatologist-recommended formulas that cater to various skin types. CeraVe products are widely acclaimed for their unique ability to help restore and maintain the skin’s natural barrier, thanks to the inclusion of essential ceramides and hyaluronic acid. Their products are not only effective but also gentle, making them suitable for even sensitive skin. Customers often praise CeraVe for its affordability and accessibility, making high-quality skincare achievable for everyone.";
             document.getElementById('name').value = ''; // Clears the input field
             document.getElementById('name').value = '';  // This sets the value of the input field to an empty string, effectively clearing it.
         }
