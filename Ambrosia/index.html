@@ -44,6 +44,7 @@
     <script src="script.js"></script>
     <br><br><br><br><br><br><br>
     <!-- Top Image Area -->
+<<<<<<< Updated upstream
     <section id="profile-container" style="margin-top:0px;">
         
         <div class="profile-info" style="margin-right:100px;">
@@ -58,10 +59,25 @@
                 <button class="actualbutton" style="text-align: center; font-size: 25px;">CREATE YOUR PLAN</button>
             </a>
           </div>
+=======
+    <section id="profile-container" style="display: flex; align-items: center; margin-top: 0px;">
+        <div class="profile-info" style="margin-right: 100px; flex: 1;">
+            <h2 class="common-font profile-text" style="margin-bottom: 0; font-weight: 500;">Transform</h2>
+            <h2 class="common-font profile-text" style="margin-bottom: 0; margin-top: 0; font-weight: 500;">your skin with</h2>
+            <h2 class="common-font profile-text" style="margin-top: 0; margin-bottom: 25px; font-weight: 900">Custom Care</h2>
+            <p class="common-font page-text" style="font-size: 18px; text-align: center; margin-right: 50px; margin-left: 50px;">
+                <br>Custom Skincare, Uniquely You — Perfectly Formulated for Your Skin.
+            </p>
+            <div style="justify-content: center; display: flex;">
+                <a href="survey2.html">
+                    <br><button class="actualbutton" style="text-align: center; font-size: 25px;">CREATE YOUR PLAN</button>
+                </a>
+            </div>
         </div>
-        <div id="profile-photo" style="min-width:37vw;">
-            <img src="image.png" width= "500", height= "650">
-          </div>
+        <div id="profile-photo" style="flex: 1;">
+            <img src="image.png" width="500" height="650" alt="Profile Photo">
+>>>>>>> Stashed changes
+        </div>
     </section>
     <div class="marquee">   
         <marquee scrollamount="15"><p class="page-text">Hyaluronic Acid   -   Retinol.   -   Vitamin C   -   Niacinimide   -   Ceramides   -   Collagen</p></marquee>
@@ -70,17 +86,22 @@
     <div class="container2" style="background-color: #6F3F2E;">
         <br>
         <div style="background-color:#F8D1C1;">
-            <h2 class = "common-font profile-text" style="color:#6F3F2E;">Pore-clogging Ingredients Checker</h2>
+            <h2 class = "common-font" style="color:#6F3F2E; text-align: left; font-size: 50px;">Brand Utility Assessment</h2>
         </div>
-        <p class="page-text" style="text-align:right;color:#F8D1C1;">With acne-prone skin, don’t ever put anything on your skin that is comedogenic or pore-clogging</p>
-    
-        <section id="profile-container" style="margin-top:0px;">
+
+        <section id="profile-container" style="margin-top:0px; width:100%">
         
-            <div class="profile-info" style="margin-right:20px;">
-                <input style="min-height:400px;" type="text" id="name" name="name" required minlength="200" maxlength="400" size="60" />
+            <div class="profile-info" style="margin-right:20px; max-width: 40vw;">
+                <input style="min-height:70px; background-color: #9D5A4D; border-style:none; color:white;" type="text" id="name" name="name" required minlength="200" maxlength="400" size="60" />
                 <div class="profile-info">
-                    <button class="actualbutton">CHECK</button><button class="actualbutton">CLEAR</button>
+                    <button style="background-color: #F8D1C1;" class="actualbutton" onclick="check()">  CHECK  </button>
+                    <button style="background-color: #F8D1C1;" class="actualbutton" onclick="clearInputField()">  CLEAR  </button>
                 </div>
+
+                <p style="color:white; font-family: TT Hoves Thin; font-size: 25px;">Assessment</p>
+                <p style="color:white; opacity:0;" id="assessment"> 
+                    CERAVE consistently stands out for its commitment to dermatologist-recommended formulas that cater to various skin types. CeraVe products are widely acclaimed for their unique ability to help restore and maintain the skin’s natural barrier, thanks to the inclusion of essential ceramides and hyaluronic acid. Their products are not only effective but also gentle, making them suitable for even sensitive skin. Customers often praise CeraVe for its affordability and accessibility, making high-quality skincare achievable for everyone.
+                </p>
             </div>
             <div id="profile-photo" style="max-width:50vw;">
                 <img src="woman.png">
@@ -89,6 +110,23 @@
         </section>
     
     </div>
+
+    <script>
+        function clearInputField() {
+            document.getElementById('name').value = '';  // This sets the value of the input field to an empty string, effectively clearing it.
+            var assessment = document.getElementById('assessment');
+            assessment.style.opacity = '0';
+        }
+
+        function check() {
+        var assessment = document.getElementById('assessment');
+        if (document.getElementById('name').value.toLowerCase() === "cerave") {
+            assessment.style.opacity = '1';
+            document.getElementById('name').value = ''; // Clears the input field
+            document.getElementById('name').value = '';  // This sets the value of the input field to an empty string, effectively clearing it.
+        }
+}
+    </script>
     
     <footer style="width:100vw">
         <br><br>
