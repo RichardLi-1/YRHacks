@@ -78,6 +78,22 @@ nav a:hover {
   font-weight: bold;
 }
 
+h1 a {
+  color: #F8D1C1;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
 
 /*----------------------Sunset Photo and Below---------------------*/
 
