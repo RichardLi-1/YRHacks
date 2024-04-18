@@ -9,7 +9,17 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body style="background-color:#E6DAD1;">
-    <main>
+    <div id="head">
+      <div class="header-left">
+          <h1 id="navbar-title">Ambrosia</h1>
+      </div>
+      <nav>
+        <a class="buttons" href="survey.html">Discover Your Skin Type</a>
+        <a class="buttons" href="resources.html">Sign In</a>
+      <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
+      </nav>
+  </div>
+    <div>
         <h1>Discover Your Skin Type</h1>  
         <img src="skincareSurvey.png" style="position:relative; right:60px;"  width="400" 
         height="500">
@@ -17,7 +27,7 @@
             <section class="js_section js_error_placement_parent js_complete_quizz_question_wrapper js_quizz_question bg_center form-contender clearfix bg_center background_image steps-contender type_radio_button js_type_radio_button js_radio_button body current" data-forkable="false" data-position="6" data-question-id="50102" data-question-text="¿Cuál es tu época preferida del año para viajar?" data-question-type="radio_button" data-full-screen="false" data-full-screen-duration="10" data-last-question="false" style="" id="wizard-p-6" role="tabpanel" aria-labelledby="wizard-h-6" aria-hidden="false">
                 <div class="header_step" data-step="7">
                  <div class="quizz_question js_error_shake_and_mark_step_error">
-                  What is your favorite time of the year to travel? 
+                  How much water do you drink a day?
                  </div>
                 </div>
                 <div class="form_fields">
@@ -34,7 +44,7 @@
                       <input data-next="1" data-adds-extra-text="0" autocomplete="off" data-textual-answer="Semana Santa" data-question-type="radio_button" class="m_option_input js_quizz_radio_button valid" type="radio" value="149594" name="participation[promo_response_attributes][response_50102]" id="participation_promo_response_attributes_response_50102_149594">
                       <div class="control-point"></div>
                       <label class="m_option_label js_quizz_label" for="participation_promo_response_attributes_response_50102_149594">
-                       B
+                       a
                       </label>
                      </div>
                     </div>
@@ -184,7 +194,14 @@
             </div>
         <button type="button">Previous</button>
         <button type="button">Next</button>
-    </main>
+
+        <div>
+          <h1>Your Skin Type Is: </h1>
+          <p>For your skin type, </p>
+
+
+        </div>
+          </div>
 	<script src="index.js"></script>
   </body>
 </html>
