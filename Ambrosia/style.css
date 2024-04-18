@@ -192,6 +192,12 @@ a:active {
   align-items: center;
 }
 
+.disappear{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /*----------------------Sunset Photo and Below---------------------*/
 
 .page-text{
