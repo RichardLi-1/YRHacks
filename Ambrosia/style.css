@@ -272,3 +272,7 @@ nav a:hover {
   font-size:60px;
   text-align: center;
 }
+
+.marquee{
+  background-color:white;
+}
