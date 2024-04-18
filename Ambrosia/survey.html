@@ -61,9 +61,10 @@
       </div>
     </div>
 
-    <div>
-      <h1 style="text-align: center; font-size: 40px">
-        Discover Your Skin Type
+    <div height="100%" style="align-items: center;"><br><br>
+      <br>
+      <h1 style="text-align: center; font-size: 40px; font-family: Codec Pro;">
+        Complete Your Skin Profile
       </h1>
       <div class="survey">
         <div class="entry">
@@ -71,36 +72,29 @@
             <img src="weather.png" width="300" height="270" />
           </div>
           <div style="float: left">
-            <h2 style="font-size: 40px">
+            <h2 style="font-size: 40px; font-family:Codec Pro;">
               What is the weather like in your area?
             </h2>
             <div class="answer-choices">
-              <ul>
-                <label>
+
                   <input type="checkbox" />
-                  <span class="seatButton">Bright and Sunny</span>
-                </label>
-              </ul>
-              <ul>
-                <label>
+                  <span class="seatButton" onclick="changeColor(this)">Bright and Sunny</span>
+
+              <p style="font-size: 28px;"></p>
                   <input type="checkbox" />
-                  <span class="seatButton">Humid and Dry</span>
-                </label>
-              </ul>
-              <ul>
-                <label>
+                  <span class="seatButton" onclick="changeColor(this)">Humid and Dry</span>
+              <p style="font-size: 28px;"></p>
+              <input type="checkbox" />
+              <span class="seatButton" onclick="changeColor(this)">Cold and Dry</span>
+              <p style="font-size: 28px;"></p>
+
                   <input type="checkbox" />
-                  <span class="seatButton">Cold and Dry</span>
-                </label>
-              </ul>
-              <ul>
-                <label>
-                  <input type="checkbox" />
-                  <span class="seatButton">Variable (Changing Frequently)</span>
-                </label>
-              </ul>
+                  <span class="seatButton" onclick="changeColor(this)">Variable (Changing Frequently)</span>
+
+                <br>
+                <br>
+              <button class="next">Next</button>
             </div>
-            <button class="next">Next</button>
           </div>
         </div>
 
@@ -108,67 +102,49 @@
           <div style="float: right; justify-content: center">
             <img src="sleep.png" width="300" height="270" />
           </div>
-          <h2>How much sleep do you get a night?</h2>
+          <br>
+          <h2 style="font-size: 40px; font-family:Codec Pro;">How much sleep do you get a night?</h2>
           <div class="answer-choices">
-            <ul>
-              <label>
+
                 <input type="checkbox" />
-                <span class="seatButton">Less than 7 hours</span>
-              </label>
-            </ul>
-            <ul>
-              <label>
+                <span class="seatButton" onclick="changeColor(this)">Less than 7 hours</span>
+                <p style="font-size: 28px;"></p>
                 <input type="checkbox" />
-                <span class="seatButton">More than 7 hours</span>
-              </label>
-            </ul>
-            <ul>
-              <label>
+                <span class="seatButton" onclick="changeColor(this)">More than 7 hours</span>
+                <p style="font-size: 28px;"></p>
                 <input type="checkbox" />
-                <span class="seatButton"
-                  >I work at night and sleep during the day</span
-                >
-              </label>
-            </ul>
-            <ul>
-              <label>
+                <span class="seatButton" onclick="changeColor(this)"
+                  >I work at night and sleep during the day</span>
+                  <p style="font-size: 28px;"></p>
                 <input type="checkbox" />
-                <span class="seatButton">Variable (Changing Frequently)</span>
-              </label>
-            </ul>
-          </div>
-          <button class="back">Back</button>
+                <span class="seatButton" onclick="changeColor(this)">Variable (Changing Frequently)</span>
+                <p style="font-size: 28px;"></p>
+            <button class="back">Back</button>
           <button class="next">Next</button>
+          </div>
         </div>
 
-        <div class="entry" style="display: none">
-          <h2>How often are you stressed out?</h2>
+        <br><br>
+        <div class="entry" style="display: none; justify-content: center;">
+          <h2 style="font-size: 40px; font-family:Codec Pro;">How often are you stressed out?</h2>
           <div class="answer-choices">
-            <ul>
-              <label>
                 <input type="checkbox" />
-                <span class="seatButton">Rarely</span>
-              </label>
-            </ul>
-            <ul>
-              <label>
+                <span class="seatButton" onclick="changeColor(this)">Rarely</span>
+                <p style="font-size: 28px;"></p>
                 <input type="checkbox" />
-                <span class="seatButton">Multiple times a week</span>
-              </label>
-            </ul>
-            <ul>
-              <label>
+                <span class="seatButton" onclick="changeColor(this)">Multiple times a week</span>
+                <p style="font-size: 28px;"></p>
                 <input type="checkbox" />
-                <span class="seatButton">Daily</span>
-              </label>
-            </ul>
-          </div>
-          <button class="back">Back</button>
+                <span class="seatButton" onclick="changeColor(this)">Daily</span>
+                <p style="font-size: 28px;"></p>
+                <button class="back">Back</button>
           <button class="next">Next</button>
+          </div>
         </div>
         <div class="entry" style="display: none; justify-content: center">
           <img src="loading.gif" class="disappear" style="justify-content:
-          center" width:500px; height: 100px />
+          center; width:500px; height: auto"/>
+          <br>
           <button
             style="
               color: #9d5a4d;
@@ -190,3 +166,9 @@
     <script src="survey.js"></script>
   </body>
 </html>
+
+<script>
+  function changeColor(button) {
+    button.classList.toggle('clicked'); // Toggle the 'clicked' class on and off
+  }
+</script>

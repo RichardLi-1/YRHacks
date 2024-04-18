@@ -33,6 +33,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Codec Pro';
+  src: url('codec-pro/CodecPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -164,9 +171,10 @@ a:active {
   width:200px;
 }
 .survey input { display: none; }
-.survey .seatButton {font-size: 26px; border-radius: 15px; height:200px;
-  width:200px;padding: 5px; border: 1px solid #ccc; background: #f9d0c1;}
-.survey input:checked + .seatButton { background: #9d5a4d; }
+.survey .seatButton {font-size: 30px; border-radius: 5px; height:200px;
+  width:200px;padding: 10px; background: #f9d0c1; font-family:Codec Pro;}
+
+.survey .seatButton.clicked { background: #9d5a4d; }
 
 .next{
   color: #9d5a4d;
