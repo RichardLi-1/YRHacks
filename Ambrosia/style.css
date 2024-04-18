@@ -12,6 +12,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves Thin';
+  src: url('tt_hoves_pro/TT\ Hoves\ Pro\ Trial\ Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Octosquares';
+  src: url('tt_octosquares/TT\ Octosquares\ Trial\ Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
