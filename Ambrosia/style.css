@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Now';
+  src: url('now/Now-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -274,4 +281,20 @@ nav a:hover {
 
 .marquee{
   background-color:white;
+}
+
+.actualbutton {
+  background-color: #F6F1EE; /* Soft peach background color */
+  border: none;              /* Removes the border */
+  padding: 15px 30px;        /* Increases the size, adjust as needed */
+  border-radius: 50px;       /* Provides a fully rounded shape, increase for more roundness if needed */
+  font-size: 15px;           /* Adjusts the font size, change it according to your design needs */
+  cursor: pointer;           /* Changes the mouse cursor to a pointer when hovering over the button */
+  transition: background-color 0.3s ease; /* Optional: Smooth transition for hover effect */
+  font-family: Now;
+  color:#9D5A4D;
+}
+
+.actualbutton:hover {
+  background-color: #E5DCD9; /* Slightly darker shade of the button color for hover effect */
 }
