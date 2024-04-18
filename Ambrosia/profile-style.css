@@ -19,6 +19,7 @@ html{
     flex: 1;
     padding: 10px;
     min-height: 50vh;
+    min-width: auto;
 }
 
 #profile-photo img {

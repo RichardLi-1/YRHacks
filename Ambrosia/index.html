@@ -11,12 +11,14 @@
 
 <!------------------------ body of webpage ------------------------>
 <body>
+    <div id="headfiller" style="height:38px"><br><br></div>
     <div id="head">
         <div class="header-left">
             <h1 id="navbar-title"><a href=index.html>Ambrosia</a></h1>
         </div>
         <nav>
           <a class="buttons" href="skintype.html">Discover Your Skin Type</a>
+          <a class="buttons" href="skintype.html">  </a>
           <a class="buttons" href="resources.html">Sign In</a>
         <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
         </nav>
@@ -39,20 +41,21 @@
 
 
     <script src="script.js"></script>
-    <br><br><br><br>
+    <br><br><br><br><br><br><br><br>
     <!-- Top Image Area -->
     <section id="profile-container" style="margin-top:0px;">
         
-        <div class="profile-info" style="margin-right:20px;">
-          <h2 class = "common-font profile-text" style="margin-bottom:0; font-weight: 500;">Transform your skin with</h2>
+        <div class="profile-info" style="margin-right:100px;">
+          <h2 class = "common-font profile-text" style="margin-bottom:0; font-weight: 500;">Transform</h2>
+          <h2 class = "common-font profile-text" style="margin-bottom:0;margin-top:0; font-weight: 500;">your skin with</h2>
           <h2 class = "common-font profile-text" style="margin-top:0; font-weight: 900">Custom Care</h2>
           <p class="common-font page-text" style="font-size:20px; text-align: center">Custom Skincare, Uniquely You — Perfectly Formulated for Your Skin.</p>
           
-          <a href="survey.html">
+          <a href="survey2.html">
             <button class="actualbutton" style="text-align: center;">CREATE YOUR PLAN</button>
         </a>
         </div>
-        <div id="profile-photo">
+        <div id="profile-photo" style="min-width:37vw;">
             <img src="image.png" width= "500", height= "650">
           </div>
     </section>
@@ -71,18 +74,15 @@
         <section id="profile-container" style="margin-top:0px;">
         
             <div class="profile-info" style="margin-right:20px;">
-                <input type="text" id="name" name="name" required minlength="200" maxlength="400" size="60" />
+                <input style="min-height:400px;" type="text" id="name" name="name" required minlength="200" maxlength="400" size="60" />
                 <div class="profile-info">
-                    <button class="actualbutton">CHECK</button>
-                </div>
-                <div class="profile-info">
-                    <button class="actualbutton">CLEAR</button>
+                    <button class="actualbutton">CHECK</button><button class="actualbutton">CLEAR</button>
                 </div>
             </div>
-            <div id="profile-photo">
+            <div id="profile-photo" style="max-width:50vw;">
                 <img src="woman.png">
                 <p class="page-text" style="color:#F8D1C1;">Always check for ingredients before using any products on your face</p>
-              </div>
+            </div>
         </section>
     
     </div>

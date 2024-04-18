@@ -58,6 +58,20 @@ html, body {
   box-sizing: border-box;
 }
 
+#headfiller {
+  background:#844C37;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
 .header-left {
   display: flex;
   align-items: center;
@@ -75,7 +89,7 @@ html, body {
   transition: opacity 0.15s ease-in-out; /* Smooth transition */
   font-family: Rasputin;
   margin: 0;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 
@@ -97,6 +111,7 @@ nav a:hover {
   color: #F8D1C1;
   font-family: Now;
   font-weight: bold;
+  font-size:20px;
 }
 
 h1 a {
@@ -336,7 +351,7 @@ a:active {
 
 .profile-text {
   color:#9D5A4D;
-  font-size:60px;
+  font-size:80px;
   text-align: center;
 }
 
