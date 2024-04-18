@@ -15,3 +15,5 @@ function toggleMenu(){
   var menu = document.getElementById('menu');
   menu.classList.toggle('show');
 }
+const entryElements = $('.entry');
+let entryIndex = 0;

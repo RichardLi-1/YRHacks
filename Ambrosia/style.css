@@ -116,11 +116,11 @@ a:active {
   text-decoration: none; 
 }
 
-.question-container { 
+.survey { 
   text-align: center;
 } 
  
-.question-container h2 { 
+.survey h2 { 
   text-align: center;
 } 
  
@@ -135,6 +135,10 @@ a:active {
 .answer-choices input[type="radio"] { 
   text-align: center;
 } 
+
+.survey input { display: none; }
+.survey .seatButton { padding: 5px; border: 1px solid #ccc; background: #f9d0c1; }
+.survey input:checked + .seatButton { background: #9d5a4d; }
 
 /*----------------------Sunset Photo and Below---------------------*/
 
