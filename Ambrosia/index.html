@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glimmers of Hope</title>
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+<link href='style.css' rel='stylesheet'>
+<link href='profile-style.css' rel='stylesheet'>
+</head>
+
+<!------------------------ body of webpage ------------------------>
+<body>
+    <div id="head">
+        <div class="header-left">
+            <h1 id="navbar-title">Ambrosia</h1>
+        </div>
+        <nav>
+          <a class="buttons" href="survey.html">Discover Your Skin Type</a>
+          <a class="buttons" href="resources.html">Sign In</a>
+        <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
+        </nav>
+    </div>
+
+    <!-- Menu content -->
+    <div id="menu" onclick="toggleMenu()" class="menu-content">
+        <a href="#home" class="menu-item common-font">Home</a>
+        <a href="events.html" class="menu-item common-font">Events</a>
+        <a href="blog.html" class="menu-item common-font">Blog</a>
+        <a href="resources.html" class="menu-item common-font">Resources</a>
+        <div class="menu-item">
+            <a href="https://www.linkedin.com/company/100954304" target="_blank" rel="noopener noreferrer">
+                <img src="linkedin.jpeg" alt="LinkedIn" style="max-height:30px;max-width:30px;margin: 0 0px;">
+            </a>
+            <a href="https://www.instagram.com/glimmerssofhope/" target="_blank" rel="noopener noreferrer">
+                <img src="instagram.png" alt="Instagram" style="max-height:30px;max-width:30px;margin: 0 0px;">
+            </a>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <br><br><br>
+    <!-- Top Image Area -->
+    <section id="profile-container" style="margin-top:0px;">
+        
+        <div class="profile-info" style="margin-right:20px;">
+          <h2 class = "common-font profile-text">Transform your skin with</h2>
+          <h2 class = "common-font profile-text">Custom Care</h2>
+          <p class="common-font page-text" style="font-size:20px">Custom Skincare, Uniquely You — Perfectly Formulated for Your Skin.</p>
+          <button>CREATE YOUR PLAN</button>
+        </div>
+        <div id="profile-photo">
+            <img src="image.png">
+          </div>
+    </section>
+
+    <marquee><p></p>Hyaluronic Acid     -     Retinol.    -     Vitamin C     -     Niacinimide    -     Ceramides  -     Collagen</p></marquee>
+
+    <div class="container2" style="background-color:#E5D5D6";>
+        <h2 class = "common-font profile-text">MY SKIN TYPE</h2>
+    </div>
+    
+</html>
+
