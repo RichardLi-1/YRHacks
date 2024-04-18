@@ -74,7 +74,7 @@ nav a:hover {
 
 .buttons {
   color: #F8D1C1;
-  font-family: Helvetica;
+  font-family: Now;
   font-weight: bold;
 }
 
@@ -314,3 +314,4 @@ a:active {
 .actualbutton:hover {
   background-color: #E5DCD9; /* Slightly darker shade of the button color for hover effect */
 }
+

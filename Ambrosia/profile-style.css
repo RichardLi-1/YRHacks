@@ -6,7 +6,7 @@ html{
 }
 #profile-container {
     display: flex;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     height:auto;
@@ -16,6 +16,7 @@ html{
 #profile-photo {
     flex: 1;
     padding: 10px;
+    min-height: 50vh;
 }
 
 #profile-photo img {
