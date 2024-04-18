@@ -213,27 +213,18 @@
     </div>
 
     <script>
-      var styles = `
-  #assessment.value{
-    word-wrap: break-word;
-    }
-`;
 
-      var styleSheet = document.createElement("style");
-      styleSheet.innerText = styles;
-      document.head.appendChild(styleSheet);
       function clearInputField() {
         document.getElementById("name").value = ""; // This sets the value of the input field to an empty string, effectively clearing it.
         var assessment = document.getElementById("assessment");
       }
+      var img = document.createElement("cerave");
+      cerave.src = "cerave.png";
 
       function check() {
         var assessment = document.getElementById("assessment");
         if (document.getElementById("name").value.toLowerCase() === "cerave") {
-          document.getElementById("assessment").value =
-            "CERAVE consistently stands out for its commitment to dermatologist-recommended formulas that cater to various skin types. CeraVe products are widely acclaimed for their unique ability to help restore and maintain the skin’s natural barrier, thanks to the inclusion of essential ceramides and hyaluronic acid. Their products are not only effective but also gentle, making them suitable for even sensitive skin. Customers often praise CeraVe for its affordability and accessibility, making high-quality skincare achievable for everyone.";
-          document.getElementById("name").value = ""; // Clears the input field
-          document.getElementById("name").value = ""; // This sets the value of the input field to an empty string, effectively clearing it.
+          document.body.appendChild(cerave);
         }
       }
     </script>
@@ -249,7 +240,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img class="social-icon" src="linkedin.jpeg" alt="LinkedIn"">
+          <img class="social-icon" src="linkedin.jpeg" alt="LinkedIn" />
         </a>
         <a
           href="https://www.instagram.com/glimmerssofhope/"
