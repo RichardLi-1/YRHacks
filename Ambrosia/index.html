@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glimmers of Hope</title>
+<title>Ambrosia</title>
 <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 <link href='style.css' rel='stylesheet'>
 <link href='profile-style.css' rel='stylesheet'>
@@ -16,7 +16,7 @@
             <h1 id="navbar-title">Ambrosia</h1>
         </div>
         <nav>
-          <a class="buttons" href="survey.html">Discover Your Skin Type</a>
+          <a class="buttons" href="skintype.html">Discover Your Skin Type</a>
           <a class="buttons" href="resources.html">Sign In</a>
         <img src="menu.png" onclick="toggleMenu()" class="social-icon mobile-only">
         </nav>
@@ -62,15 +62,28 @@
         <marquee><p class="page-text">Hyaluronic Acid     -     Retinol.    -     Vitamin C     -     Niacinimide    -     Ceramides  -     Collagen</p></marquee>
     </div>
     
-    <div class="container2" style="background-color:#844C37";>
+    <div class="container2" style="background-color:#844C37;">
         <h2 class = "common-font profile-text" style="color:#F1ECEA;">MY SKIN TYPE</h2>
     </div>
 
     <div class="container2" style="background-color: #6F3F2E;">
         <br>
         <div style="background-color:#F8D1C1;">
-        <h2 class = "common-font profile-text" style="color:#F1ECEA;">Pore-clogging Ingredients Checker</h2>
+            <h2 class = "common-font profile-text" style="color:#6F3F2E;">Pore-clogging Ingredients Checker</h2>
         </div>
+        <p class="page-text" style="text-align:right;color:#F8D1C1;">With acne-prone skin, don’t ever put anything on your skin that is comedogenic or pore-clogging</p>
+    
+        <section id="profile-container" style="margin-top:0px;">
+        
+            <div class="profile-info" style="margin-right:20px;">
+                <input type="text" id="name" name="name" required minlength="200" maxlength="400" size="60" />
+            </div>
+            <div id="profile-photo">
+                <img src="woman.png">
+                <p class="page-text" style="color:#F8D1C1;">Always check for ingredients before using any products on your face</p>
+              </div>
+        </section>
+    
     </div>
     
 </html>
