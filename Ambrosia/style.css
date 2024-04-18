@@ -116,6 +116,26 @@ a:active {
   text-decoration: none; 
 }
 
+.question-container { 
+  text-align: center;
+} 
+ 
+.question-container h2 { 
+  text-align: center;
+} 
+ 
+.answer-choices { 
+  text-align: center;
+} 
+ 
+.answer-choices label { 
+  text-align: center;
+} 
+ 
+.answer-choices input[type="radio"] { 
+  text-align: center;
+} 
+
 /*----------------------Sunset Photo and Below---------------------*/
 
 .page-text{
