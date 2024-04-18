@@ -132,28 +132,57 @@ a:active {
 }
 
 .survey { 
-  text-align: center;
+  text-align: left;
+  margin-left: 100px;
 } 
  
 .survey h2 { 
-  text-align: center;
+  text-align: left;
+  margin-left: 100px;
 } 
  
 .answer-choices { 
-  text-align: center;
+  text-align: left;
+  margin-left: 100px;
 } 
  
 .answer-choices label { 
-  text-align: center;
+  text-align: left;
+  font-size: 30;
+  margin-left: 100px;
 } 
  
 .answer-choices input[type="radio"] { 
-  text-align: center;
+  text-align: left;
+  margin-left: 100px;
 } 
-
+.entry {
+  padding-top: 0px;
+}
+.label{
+  height:200px;
+  width:200px;
+}
 .survey input { display: none; }
-.survey .seatButton { padding: 5px; border: 1px solid #ccc; background: #f9d0c1; }
+.survey .seatButton {font-size: 26px; border-radius: 15px; height:200px;
+  width:200px;padding: 5px; border: 1px solid #ccc; background: #f9d0c1;}
 .survey input:checked + .seatButton { background: #9d5a4d; }
+
+.next{
+  color: #9d5a4d;
+  font-family: Now;
+  font-weight: bold;
+  font-size:20px;
+  align-items: center;
+}
+
+.back{
+  color: #9d5a4d;
+  font-family: Now;
+  font-weight: bold;
+  font-size:20px;
+  align-items: center;
+}
 
 /*----------------------Sunset Photo and Below---------------------*/
 

@@ -7,7 +7,7 @@
     <title>Ambrosial</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <script src="survey.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body style="background-color: #e6dad1">
@@ -25,7 +25,7 @@
         />
       </nav>
     </div>
-    <br /><br />
+    <br /><br /><br />
 
     <!-- Menu content -->
     <div id="menu" onclick="toggleMenu()" class="menu-content">
@@ -61,16 +61,20 @@
       </div>
     </div>
     <div>
-      <h1>Discover Your Skin Type</h1>
-      <img
-        src="skincareSurvey.png"
-        style="position: relative; right: 60px"
-        width="400"
-        height="500"
-      />
+      <h1 style="text-align: center; font-size: 40px">
+        Discover Your Skin Type
+      </h1>
       <div class="survey">
         <div class="entry">
-          <h2>What is the weather like in your area?</h2>
+          <img
+            src="weather.png"
+            style="justify-content: center"
+            width="300"
+            height="250"
+          />
+          <h2 style="font-size: 40px">
+            What is the weather like in your area?
+          </h2>
           <div class="answer-choices">
             <ul>
               <label>
@@ -96,8 +100,8 @@
                 <span class="seatButton">Variable (Changing Frequently)</span>
               </label>
             </ul>
-            <button class="next">Next</button>
           </div>
+          <button class="next">Next</button>
         </div>
 
         <div class="entry" style="display: none">
@@ -129,34 +133,47 @@
                 <span class="seatButton">Variable (Changing Frequently)</span>
               </label>
             </ul>
-            <button class="back">Back</button>
-            <button class="next">Next</button>
           </div>
+          <button class="back">Back</button>
+          <button class="next">Next</button>
+        </div>
+
+        <div class="entry" style="display: none">
+          <h2>How often are you stressed out?</h2>
+          <div class="answer-choices">
+            <ul>
+              <label>
+                <input type="checkbox" />
+                <span class="seatButton">Rarely</span>
+              </label>
+            </ul>
+            <ul>
+              <label>
+                <input type="checkbox" />
+                <span class="seatButton">Multiple times a week</span>
+              </label>
+            </ul>
+            <ul>
+              <label>
+                <input type="checkbox" />
+                <span class="seatButton">Daily</span>
+              </label>
+            </ul>
+          </div>
+          <button class="back">Back</button>
+          <button
+            style="
+              color: #9d5a4d;
+              font-family: Now;
+              font-weight: bold;
+              font-size: 20px;
+            "
+          >
+            <a href="results.html">Submit</a>
+          </button>
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <div class="entry">
-      <p>paragraph text 1</p>
-
-      <button class="next">Next</button>
-    </div>
-
-    <div class="entry" style="display: none">
-      <p>paragraph text 2</p>
-      <button class="back">Back</button>
-      <button class="next">Next</button>
-    </div>
-
-    <div class="entry" style="display: none">
-      <p>paragraph text 3</p>
-      <button class="back">Back</button>
-    </div>
-    <div>
-      <button type="submit">See Results</button>
-      <h1>Your Skin Type Is:</h1>
-      <p>For your skin type,</p>
-    </div>
+    <script src="survey.js"></script>
   </body>
 </html>

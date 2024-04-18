@@ -1,3 +1,5 @@
+console.log("from script file");
+
 const entryElements = $('.entry');
 let entryIndex = 0;
 
