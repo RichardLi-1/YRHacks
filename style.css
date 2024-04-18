@@ -4,13 +4,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   margin:0;
-  background-color: #70488D;
-}
-
-@media (prefers-color-scheme: light) {
-  html, body {
-      background-color: #FCFCFC;
-  }
+  background-color: #E6DAD1;
 }
 
 .common-font {
@@ -102,15 +96,8 @@ nav a:hover {
         max-width: 1000px;
         margin: 0 auto; /* Center the container horizontally */
         padding: 0 20px; /* Padding for better readability */
-        background-color:#70488D;
+        background-color:#E6DAD1;
     }
-
-@media (prefers-color-scheme: light) {
-  .container2 {
-      background-color: #FCFCFC;
-  }
-}
-
 #title-text {
   text-align: center;
   font-family: Helvetica;
